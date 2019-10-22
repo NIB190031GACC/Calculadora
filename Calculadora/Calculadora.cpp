@@ -7,7 +7,7 @@ using namespace std;
 //Global Variables 
 
 double resultado_2, u, v = 0;
-int resultado, r, s, operacion = 0;
+int resultado, r, s, operacion, repetirCalculadora = 0;
 
 //Function Declaration
 
@@ -30,34 +30,39 @@ void Opcion_Invalida();
 
 int main()
 {
-	mensaje_inicial();
+	do 
+	{
+		mensaje_inicial();
 
+		switch (operacion) 
+		{
+		case 1:
+			Suma();
+			break;
+		case 2:
+			Resta();
+			break;
+		case 3:
+			Multiplicacion();
+			break;
+		case 4:
+			Division();
+			break;
+		case 5:
+			Potenciacion();
+			break;
+		case 6:
+			Radicacion();
+			break;
+		default:
+			Opcion_Invalida();
 
-	switch (operacion) {
-
-	case 1:
-		Suma();
-		break;
-	case 2:
-		Resta();
-		break;
-	case 3:
-		Multiplicacion();
-		break;
-	case 4:
-		Division();
-		break;
-	case 5:
-		Potenciacion();
-		break;
-	case 6:
-		Radicacion();
-		break;
-	default:
-		Opcion_Invalida();
-
-	}
-	cin.get();
+		}
+		cout << "Desea realizar otra operacion matematica" << endl;
+		cout << "Ingrese 1 para Si o 2 para No " << endl;
+		cin >> repetirCalculadora;
+	} while (repetirCalculadora == 1);
+	//cin.get();
 }
 
 //Function Definition

@@ -1,3 +1,3 @@
 # Calculadora
 
-Este proyecto contiene una calculadora que realiza las seis operaciones matematicas basicas; suma, resta, multiplicación, división, raiz enesima y potencia enesima.
+Este proyecto contiene una calculadora que realiza las seis operaciones matematicas básicas; suma, resta, multiplicación, división, raiz enésima y potencia enésima.
